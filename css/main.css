@@ -1,0 +1,146 @@
+/* Demo styles */
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  /*display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;*/
+}
+
+.swiper-button-next{
+	transform: rotateZ(-90deg);
+	position: absolute;
+	top:auto;
+	bottom: 0;
+	left: 47%;
+	
+	
+	color: white;
+	/*animation: run 1s;*/
+}
+@keyframes run{
+	from{
+		transform: translateY(0);
+		opacity: 0.5;
+	}
+	to{
+		transform: translateY(-10%);
+	}
+}
+
+
+
+
+
+
+
+/*音乐部分开始*/
+#music{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	z-index: 9;
+}
+
+#music .musicbg{
+	width: 60px;
+	height: 60px;
+	/*display: none;*/
+}
+#music .musicImg{
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	animation: music 1s linear infinite;
+}
+@keyframes music{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+/*音乐部分结束*/
+
+
+
+/*第一屏开始*/
+.swiper-slide.one{
+	background: url(../img/onebg.jpg);
+	background-size: 100% 100%;
+	
+}
+.swiper-slide.one .top{
+	width: 70%;
+	height: 50%;
+	border: 10px solid white;
+	margin: 0 auto;
+	margin-top: 10%;
+	overflow: hidden;
+}
+.swiper-slide.one .top img{
+	width: 100%;
+}
+.swiper-slide.one .center{
+	width: 70%;
+	height: 20%;
+	margin: 0 auto;
+	margin-top: 8%;
+	position: relative;
+}
+.swiper-slide.one .center .ring{
+	width: 30%;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.swiper-slide.one .center .marry{
+	width: 100%;
+	position: absolute;
+	top:10%;
+	left: 0;
+}
+.swiper-slide.one .bottom{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 6%;
+	height: 10%;
+	font-size: 10vw;
+	/*color: rgba(255,255,255,0.9);*/
+	color: yellow;
+}
+.swiper-slide.one .bottom div{
+	float: left;
+}
+/*第一屏结束*/
