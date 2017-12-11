@@ -144,3 +144,47 @@ body {
 	float: left;
 }
 /*第一屏结束*/
+
+
+
+/*第二屏开始*/
+.swiper-slide.two{
+	background: url(../img/twobg.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.swiper-slide.two .top{
+	width: 40%;
+	height: 25%;
+	border: 8px solid white;
+	position: absolute;
+	top:10%;
+	left: 10%;
+	overflow: hidden;
+	z-index: 1;
+}
+.swiper-slide.two img{
+	width: 100%;
+}
+.swiper-slide.two .bottom{
+	width: 40%;
+	height: 25%;
+	border: 8px solid white;
+	position: absolute;
+	bottom:15%;
+	right: 10%;
+	overflow: hidden;
+	z-index: 1;
+}
+.swiper-slide.two .center{
+	width: 65%;
+	height: 30%;
+	border: 8px solid white;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+	z-index: 2;
+}
+/*第二屏结束*/
