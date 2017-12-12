@@ -188,3 +188,11 @@ body {
 	z-index: 2;
 }
 /*第二屏结束*/
+
+
+/*第三屏开始*/
+.swiper-slide.three div{
+	margin: 0 auto;
+	margin-top: 15%;
+}
+/*第三屏结束*/
